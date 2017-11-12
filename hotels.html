@@ -13,14 +13,14 @@
 </head>
   <body>
     <header class="main-header">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/sedona-header-logo.png" width="138" height="70" alt="Логотип «City of Sedona»">
+      </a>
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="http://placehold.it/138x70" width="138" height="70" alt="Логотип «City of Sedona»">
-        </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -28,37 +28,37 @@
     <main class="content">
         <div class="selection-form-container">
           <form action="" method="get" class="">
-            <div class="checkbox-list-1">
-              <div>
-                <input type="checkbox" name="c-1" id="pool">
+            <ul class="checkbox-one">
+              <li>
+                <input type="checkbox" name="check-a" id="pool">
                 <label for="pool"><span class="lead-w">Бассейн</span></label>
-              </div>
-              <div>
-                <input type="checkbox" name="c-2" id="parking">
+              </li>
+              <li>
+                <input type="checkbox" name="check-b" id="parking">
                 <label for="parking"><span class="lead-w">Парковка</span></label>
-              </div>
-              <div>
-                <input type="checkbox" name="c-3" id="wi-fi">
+              </li>
+              <li>
+                <input type="checkbox" name="check-c" id="wi-fi">
                 <label for="wi-fi"><span class="lead-w">Парковка</span></label>
-              </div>
-            </div>
-            <div class="checkbox-list-2">
-              <div>
-                <input type="checkbox" name="c-4" id="hotel">
+              </li>
+            </ul>
+            <ul class="checkbox-two">
+              <li>
+                <input type="checkbox" name="check-d" id="hotel">
                 <label for="hotel"><span class="lead-w">Гостиница</span></label>
-              </div>
-              <div>
-                <input type="checkbox" name="c-5" id="motel">
+              </li>
+              <li>
+                <input type="checkbox" name="check-e" id="motel">
                 <label for="motel"><span class="lead-w">Мотель</span></label>
-              </div>
-              <div>
-                <input type="checkbox" name="c-6" id="apartments">
+              </li>
+              <li>
+                <input type="checkbox" name="check-f" id="apartments">
                 <label for="apartments"><span class="lead-w">Апартаменты</span></label>
-              </div>
-            </div>
+              </li>
+            </ul>
               <div class="filter-value">
                 <h2 class="visualy-hidden">Фильтр стоимости услуг</h2>
-                <!-- Здесь будет форма -->
+                
               </div>
           </form>
           </div>
@@ -72,7 +72,7 @@
               <a href="#"><img src="http://placehold.it/135x90" width="135" height="90" alt="Гостиница «Amara Resort & Spa»"></a>
             </div>
             <div class="offer-details">
-              <p class="title-small">Amara Resort & Spa</p>
+              <p class="title-small"><a href="#">Amara Resort & Spa</a></p>
             <div class="more-info">
               <p>Гостиница</p>
               <a href="#" class="button-more">Подробнее</a>
@@ -96,7 +96,7 @@
                   <a href="#"><img src="http://placehold.it/135x90" width="135" height="90" alt="Мотель «Desert Quail Inn»"></a>
                 </div>
                 <div class="offer-details">
-                  <p class="title-small">Desert Quail Inn</p>
+                  <p class="title-small"><a href="#">Desert Quail Inn</a></p>
                 <div class="more-info">
                   <p>Мотель</p>
                   <a href="#" class="button-more">Подробнее</a>
@@ -120,7 +120,7 @@
                       <a href="#"><img src="http://placehold.it/135x90" width="135" height="90" alt="Апартаменты «Villas at Poco Diablo»"></a>
                     </div>
                     <div class="offer-details">
-                      <p class="title-small">Villas at Poco Diablo</p>
+                      <p class="title-small"><a href="#">Villas at Poco Diablo</a></p>
                     <div class="more-info">
                       <p>Апартаменты</p>
                       <a href="#" class="button-more">Подробнее</a>
@@ -140,20 +140,18 @@
                     </div>
                   </div>
          
-
-         
     </main>
     <footer class="main-footer">
         <p><a href="#"><span class="title-small">#visitsedona</span></a></p>
         <div class="footer-social">
           <ul class="social-icons">
-            <li><a class="icon-twitter" href="#"></a></li>
+            <li><a class="icon-twitter" href=""></a></li>
             <li><a class="icon-facebook" href="#"></a></li>
             <li><a class="icon-youtube" href="#"></a></li>
           </ul>
         </div>
-          <p class="dev-adress">website by: <a class="footer-logo">
-          <img src="http://placehold.it/115x41" width="115" height="41" alt="Логотип «html academy»"></a>
+          <p class="dev-adress">website by: <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «html academy»"></a>
           </p>
     </footer>
       <!-- Js -->
