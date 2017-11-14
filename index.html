@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
-  <title>HTML Academy: Седона</title>
+  <title>html Academy: Cедона</title>
 
   <link rel="shortcut icon" type="image/x-icon" href="img/sedona-favicon.ico">
 
-  <!-- Css -->
-  <link href="style.css" rel="stylesheet" />
+  <!-- css -->
+  <link href="css/style.css" rel="stylesheet" />
 
 </head>
 
@@ -45,12 +45,12 @@
     <section class="note-a">
       <h2 class="title-small">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p>
-        <span class="lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
+        <span class="lead">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</span>
       </p>
     </section>
     <div class="hero">
       <div class="column-text-left">
-        <p class="title-small">НАСТОЯЩИЙ ГОРОДОК!</p>
+        <p class="title-small">Настоящий городок!</p>
         <p>
           <span class="lead">— №1 —</span>
         </p>
@@ -59,26 +59,26 @@
         </p>
       </div>
       <div class="column-right-img">
-        <img src="http://placehold.it/800x256" width="800" height="256" alt="Фото города">
+        <img src="http://placehold.it/800x256" width="800" height="256" alt="фото города">
       </div>
     </div>
     <div class="reccomend">
       <div class="column-rec">
-        <img src="img/elements/icon-home.svg" width="75" height="72" alt="Иконка «Домик»">
+        <img src="img/elements/icon-home.svg" width="75" height="72" alt="иконка «домик»">
         <h3 class="title-small">Жильё</h3>
         <p>
           <span class="lead">Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
         </p>
       </div>
       <div class="column-rec">
-        <img src="img/elements/icon-hamburger.svg" width="74" height="70" alt="Иконка «Гамбургер»">
+        <img src="img/elements/icon-hamburger.svg" width="74" height="70" alt="иконка «гамбургер»">
         <h3 class="title-small">Еда</h3>
         <p>
           <span class="lead">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
         </p>
       </div>
       <div class="column-rec">
-        <img src="img/elements/icon-gift.svg" width="64" height="76" alt="Иконка «Подарок»">
+        <img src="img/elements/icon-gift.svg" width="64" height="76" alt="иконка «подарок»">
         <h3 class="title-small">Сувениры</h3>
         <p>
           <span class="lead">Не только китайского, но и местного производства!</span>
@@ -87,7 +87,7 @@
     </div>
     <div class="hero">
       <div class="column-left-img">
-        <img src="http://placehold.it/800x256" width="800" height="256" alt="Фото «Мост Дьявола»">
+        <img src="http://placehold.it/800x256" width="800" height="256" alt="фото «мост дьявола»">
       </div>
       <div class="column-text-right">
         <p class="title-small">Там есть мост дьявола</p>
@@ -115,7 +115,7 @@
           <span class="lead">— №4 —</span>
         </p>
         <p>
-          <span class="lead">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
+          <span class="lead">Ехать в седону из лас-вегаса совсем не скучно!</span>
         </p>
       </div>
       <div class="feature-b">
@@ -124,88 +124,79 @@
           <span class="lead">— №5 —</span>
         </p>
         <p>
-          <span class="lead">Большинство едет в Гранд Каньон и толпится там</span>
+          <span class="lead">Большинство едет в гранд каньон и толпится там</span>
         </p>
       </div>
     </div>
-    <section class="search-form-container">
-      <h3 class="title-medium">Заинтересовались?</h3>
-      <p>
-        <span class="lead">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</span>
-      </p>
-      <div class="search-form-title">
-        <p style="color: white;">
-          <span class="title-small">Поиск гостиницы в Седоне</span>
+    <div class="sf-container">
+      <section class="s-title">
+        <h3 class="title-medium">Заинтересовались?</h3>
+        <p>
+          <span class="s-info-a">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</span>
         </p>
-      </div>
+        <p class="s-info-b">Поиск гостиницы в Седоне</p>
+      </section>
+      <section class="search">
+        <h3 class="visually-hidden">Форма поиска гостиницы в Седоне</h3>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get" class="">
+          <p class="field-arrival">
+            <label for="arrival-date">
+              <span class="lead">дата заезда:</span>
+            </label>
+            <input type="text" name="arrival" id="arrival-date">
+          </p>
+          <p class="field-leaving">
+            <label for="leaving-date">
+              <span class="lead">дата отъезда:</span>
+            </label>
+            <input type="text" name="leaving" id="leaving-date">
+          </p>
+          <p class="field-adults">
+            <label for="amount-a">
+              <span class="lead">взрослые:</span>
+            </label>
+            <input type="text" name="adults" id="amount-a">
+          </p>
+          <p class="field-children">
+            <label for="amount-c">
+              <span class="lead">дети:</span>
+            </label>
+            <input type="text" name="children" id="amount-c">
+          </p>
+          <button class="button-find" type="submit">найти</button>
+        </form>
+      </section>
       <div class="map-container">
 
       </div>
-      <div class="search-form">
-        <form action="" method="get" class="">
-          <div class="field-arrival">
-            <input type="text" name="field-a" id="arrival-date" placeholder="">
-            <label for="arrival-date">
-              <span class="lead">Дата заезда:</span>
-            </label>
-          </div>
-          <div class="field-leaving">
-            <input type="text" name="field-b" id="leaving-date" placeholder="">
-            <label for="leaving-date">
-              <span class="lead">Дата отъезда:</span>
-            </label>
-          </div>
-          <div class="field-adults">
-            <input type="text" name="field-c" id="amount-a" placeholder="">
-            <label for="amount-a">
-              <span class="lead">Взрослые:</span>
-            </label>
-          </div>
-          <div class="field-children">
-            <input type="text" name="field-d" id="amount-c" placeholder="">
-            <label for="amount-c">
-              <span class="lead">Дети:</span>
-            </label>
-          </div>
-          <div class="button-find">
-            <input type="submit" value="Найти" class="find-b">
-          </div>
-        </form>
-      </div>
-    </section>
+    </div>
   </main>
   <footer class="main-footer">
     <p>
       <a href="#">
-        <span class="title-small">#visitsedona</span>
+        <span class="tw-tag">#visitsedona</span>
       </a>
     </p>
     <div class="footer-social">
       <ul class="social-icons">
         <li>
-          <a class="icon-twitter" href="#" title="Twitter">
-            <img src="img/social/twitter.svg" width="17" height="15" atl="Иконка Twitter">
-          </a>
+          <a class="icon-twitter" href="#" title="twitter">Иконка twitter</a>
         </li>
         <li>
-          <a class="icon-facebook" href="#" title="Facebook">
-            <img src="img/social/fb-icon.svg" width="12" height="22" atl="Иконка Facebook">
-          </a>
+          <a class="icon-facebook" href="#" title="facebook">Иконка facebook</a>
         </li>
         <li>
-          <a class="icon-youtube" href="#" title="Youtube">
-            <img src="img/social/youtube.svg" width="20" height="16" atl="Иконка Youtube">
-          </a>
+          <a class="icon-youtube" href="#" title="youtube">Иконка youtube</a>
         </li>
       </ul>
     </div>
-    <p class="dev-adress">website by:
+    <p class="footer-copyright">website by:
       <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «html academy»"></img>
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «html Academy»"></img>
       </a>
     </p>
   </footer>
-  <!-- Js -->
+  <!-- js -->
 
 </body>
 

@@ -1,0 +1,28 @@
+/* Typography */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url(fonts/ptsans.woff2) format("woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: ;
+	font-weight: 400;
+	font-size: ;
+	line-height: ;
+	color: ;
+}
+
+body,
+input,
+textarea,
+select {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+
