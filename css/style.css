@@ -34,13 +34,41 @@ body {
 
 }
 
-/* Header */
-
+/* Header & Content */
 .main-header {
   background-color: #ffffff;
 }
 
-a {
-  text-decoration: none;
+.site-navigation li {
+	float: left;
+	
+  width: 20%;
+  list-style-type: none;
 }
 
+.site-navigation a {
+  padding: 20px 0;
+  color: #000000;
+	text-align: center;
+  text-decoration: none;
+}
+/* Forms */
+input:focus {
+  outline: none;
+  border: 1px solid lightblue;
+  border-style: dashed;
+}
+
+
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
