@@ -14,27 +14,31 @@
 </head>
 
 <body class="inner-page">
+  <div class="wrapper">
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/sedona-header-logo.png" width="138" height="70" alt="Логотип «City of Sedona»">
-    </a>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li>
-          <a href="#">Информация</a>
-        </li>
-        <li>
-          <a href="#">Фото и видео</a>
-        </li>
-        <li>
-          <a href="#">Карта штата</a>
-        </li>
-        <li class="site-navigation-current">
-          <a href="hotels.html">Гостиницы</a>
-        </li>
-      </ul>
+    <nav class="main-nav">
+        <a class="header-logo" href="index.html">
+            <img src="img/sedona-header-logo.png" width="138" height="70" alt="Логотип «City of Sedona»">
+          </a>
+          <ul class="site-nav">
+              <li class="nav-cell">
+                <a class="nav-link" href="#">Информация</a>
+              </li>
+              <li class="nav-cell">
+                <a class="nav-link" href="#">Фото и видео</a>
+              </li>
+              <li class="nav-cell"></li>
+              <li class="nav-cell">
+                <a class="nav-link" href="#">Карта штата</a>
+              </li>
+              <li class="nav-cell">
+                <a class="nav-link nav-current" href="hotels.html">Гостиницы</a>
+              </li>
+            </ul>
     </nav>
   </header>
+</div>
+  <div class="wrapper">
   <main class="content">
     <h2 class="visually-hidden">Форма подбора жилья по ключевым особенностям</h2>
     <section class="selection-form-container">
@@ -103,27 +107,20 @@
         </li>
       </ul>
       <div class="sort-links">
-        <a href="#">
-          <span class="s-link">По цене</span>
-        </a>
-        <a href="#">
-          <span class="s-link">По типу</span>
-        </a>
-        <a href="#">
-          <span class="s-link">По рейтингу</span>
-        </a>
+          <button class="s-link"><a href="#">По цене</a></button>
+          <button class="s-link"><a href="#">По типу</a></button>
+          <button class="s-link"><a href="#">По рейтингу</a></button>
       </div>
       <div class="sort-buttons">
         <ul class="up-down">
           <li>
-            <span class="button-up">
+            <button class="button-up">
               <img src="img/elements/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
-            </span>
+            </button>
           </li>
           <li>
-            <span class="button-down">
-              <img src="img/elements/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
-            </span>
+            <button class="button-down">
+              <img src="img/elements/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз"></button>
           </li>
         </ul>
       </div>
@@ -163,9 +160,7 @@
           </li>
         </ul>
         <div class="rating-text">
-          <p>
-            <span class="lead">Рейтинг: 8,5</span>
-          </p>
+            <span class="lead">Рейтинг:</span><span class="lead"> 8,5</span>
         </div>
       </div>
     </div>
@@ -242,8 +237,9 @@
         </div>
       </div>
     </div>
-
   </main>
+  </div>
+  <div class="wrapper">
   <footer class="main-footer">
     <p>
       <a href="https://www.instagram.com/visitsedona/">
@@ -269,6 +265,7 @@
       </a>
     </p>
   </footer>
+</div>
   <!-- Js -->
 
 </body>
