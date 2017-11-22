@@ -28,14 +28,6 @@ body {
   background-color: #f2f2f2;
 }
 
-.main-title {
-  font-family: "PT Sans Bold", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  text-align: center;
-}
-
 .title-small {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
@@ -44,18 +36,10 @@ body {
   text-align: center;
 }
 
-.m-text {
-  font-size: 14px;
-  line-height: 26px;
-  text-align: center;
-  margin-top: 0;
-}
-
 /* Container */
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 
 }
 
 /* Header */
@@ -146,9 +130,32 @@ body {
 }
 
 /* Notes */
+
+
 .note-a {
-  padding: 45px 0;
   background-color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+  
+}
+
+.note-title {
+  margin: 0;
+  padding-top: 60px;
+  margin-bottom: 30px;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  
+}
+
+.note-text {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 26px;
+  
 }
 
 /* Hero 1 */
@@ -219,11 +226,7 @@ body {
 
 
 /* Forms */
-input:focus {
-  outline: none;
-  border: 1px solid lightblue;
-  border-style: dashed;
-}
+
 
 /* Accessibility */
 .visually-hidden {
@@ -236,3 +239,4 @@ input:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
