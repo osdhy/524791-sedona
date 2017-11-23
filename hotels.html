@@ -43,52 +43,51 @@
       <h2 class="visually-hidden">Форма подбора жилья по ключевым особенностям</h2>
       <section class="selection-form-container">
         <form action="https://echo.htmlacademy.ru" method="get">
-          <h3 class="f-title">Инфраструктура:</h3>
+          <h3 class="filter-title">Инфраструктура:</h3>
           <ul class="checkbox-list">
             <li>
               <input type="checkbox" name="check-a" id="pool">
               <label for="pool">
-                <span class="lead-w">Бассейн</span>
+                <span class="checkbox-name">Бассейн</span>
               </label>
             </li>
             <li>
               <input type="checkbox" name="check-b" id="parking">
               <label for="parking">
-                <span class="lead-w">Парковка</span>
+                <span class="checkbox-name">Парковка</span>
               </label>
             </li>
             <li>
               <input type="checkbox" name="check-c" id="wi-fi">
               <label for="wi-fi">
-                <span class="lead-w">Парковка</span>
+                <span class="checkbox-name">Парковка</span>
               </label>
             </li>
           </ul>
-          <h3 class="f-title">Тип жилья:</h3>
+          <h3 class="filter-title">Тип жилья:</h3>
           <ul class="checkbox-list">
             <li>
               <input type="checkbox" name="check-d" id="hotel">
               <label for="hotel">
-                <span class="lead-w">Гостиница</span>
+                <span class="checkbox-name">Гостиница</span>
               </label>
             </li>
             <li>
               <input type="checkbox" name="check-e" id="motel">
               <label for="motel">
-                <span class="lead-w">Мотель</span>
+                <span class="checkbox-name">Мотель</span>
               </label>
             </li>
             <li>
               <input type="checkbox" name="check-f" id="apartments">
               <label for="apartments">
-                <span class="lead-w">Апартаменты</span>
+                <span class="checkbox-name">Апартаменты</span>
               </label>
             </li>
           </ul>
           <div class="filter-value">
             <h3 class="visually-hidden">Фильтр стоимости услуг</h3>
-            <p class="title-small">Стоимость в сутки (Р):</p>
-
+            <p class="filter-title">Стоимость в сутки (Р):</p>
           </div>
           <button class="button-show" type="submit">Показать</button>
         </form>
@@ -96,42 +95,33 @@
       <div class="sort">
         <ul class="results">
           <li>
-            <p>
-              <span class="title-small">Найдено: 3</span>
-            </p>
+            <span class="title-small">Найдено: 3</span>
           </li>
           <li>
-            <p>
-              <span class="title-small">Сортировка:</span>
-            </p>
+            <span class="sort-title">Сортировка:</span>
+          </li>
+          <li class="sort-link">
+            <a href="#" class="link-style">По цене</a>
+          </li>
+          <li class="sort-link">
+            <a href="#" class="link-style">По типу</a>
+          </li>
+          <li class="sort-link">
+            <a href="#" class="link-style">По рейтингу</a>
+          </li>
+          <li>
+            <button class="sort-button">
+              <img src="img/elements/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
+            </button>
+          </li>
+          <li>
+            <button class="sort-button">
+              <img src="img/elements/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
+            </button>
           </li>
         </ul>
-        <div class="sort-links">
-          <button class="s-link">
-            <a href="#">По цене</a>
-          </button>
-          <button class="s-link">
-            <a href="#">По типу</a>
-          </button>
-          <button class="s-link">
-            <a href="#">По рейтингу</a>
-          </button>
-        </div>
-        <div class="sort-buttons">
-          <ul class="up-down">
-            <li>
-              <button class="button-up">
-                <img src="img/elements/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
-              </button>
-            </li>
-            <li>
-              <button class="button-down">
-                <img src="img/elements/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
-              </button>
-            </li>
-          </ul>
-        </div>
       </div>
+
       <div class="offer">
         <div class="img-preview">
           <a href="#">
@@ -257,13 +247,13 @@
       <div class="footer-social">
         <ul class="social-icons">
           <li>
-            <a class="icon-twitter" href="#" title="twitter">Иконка twitter</a>
+            <a class="icon-twitter" href="#" aria-label="Иконка Твиттер" title="Twitter icon">Иконка Twitter</a>
           </li>
           <li>
-            <a class="icon-facebook" href="#" title="facebook">Иконка facebook</a>
+            <a class="icon-facebook" href="#" aria-label="Иконка Фэйсбук" title="Facebook">Иконка Facebook</a>
           </li>
           <li>
-            <a class="icon-youtube" href="#" title="youtube">Иконка youtube</a>
+            <a class="icon-youtube" href="#" aria-label="Иконка Ютьюб" title="Youtube">Иконка Youtube</a>
           </li>
         </ul>
       </div>
