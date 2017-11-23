@@ -40,92 +40,87 @@
   </div>
   <div class="wrapper">
     <main class="content">
-      <h2 class="visually-hidden">Форма подбора жилья по ключевым особенностям</h2>
-      <section class="selection-form-container">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <h3 class="filter-title">Инфраструктура:</h3>
-          <ul class="checkbox-list">
-            <li>
-              <input type="checkbox" name="check-a" id="pool">
-              <label for="pool">
-                <span class="checkbox-name">Бассейн</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="check-b" id="parking">
-              <label for="parking">
-                <span class="checkbox-name">Парковка</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="check-c" id="wi-fi">
-              <label for="wi-fi">
-                <span class="checkbox-name">Парковка</span>
-              </label>
-            </li>
-          </ul>
-          <h3 class="filter-title">Тип жилья:</h3>
-          <ul class="checkbox-list">
-            <li>
-              <input type="checkbox" name="check-d" id="hotel">
-              <label for="hotel">
-                <span class="checkbox-name">Гостиница</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="check-e" id="motel">
-              <label for="motel">
-                <span class="checkbox-name">Мотель</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" name="check-f" id="apartments">
-              <label for="apartments">
-                <span class="checkbox-name">Апартаменты</span>
-              </label>
-            </li>
-          </ul>
-          <div class="filter-value">
-            <h3 class="visually-hidden">Фильтр стоимости услуг</h3>
-            <p class="filter-title">Стоимость в сутки (Р):</p>
-          </div>
-          <button class="button-show" type="submit">Показать</button>
-        </form>
-      </section>
-      <div class="sort">
-        <ul class="results">
-          <li>
-            <span class="title-small">Найдено: 3</span>
-          </li>
-          <li>
-            <span class="sort-title">Сортировка:</span>
-          </li>
-          <li class="sort-link">
-            <a href="#" class="link-style">По цене</a>
-          </li>
-          <li class="sort-link">
-            <a href="#" class="link-style">По типу</a>
-          </li>
-          <li class="sort-link">
-            <a href="#" class="link-style">По рейтингу</a>
-          </li>
-          <li>
-            <button class="sort-button">
-              <img src="img/elements/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
-            </button>
-          </li>
-          <li>
-            <button class="sort-button">
-              <img src="img/elements/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
-            </button>
-          </li>
-        </ul>
+      <div class="filter-container">
+        <section>
+          <h2 class="visually-hidden">Форма подбора жилья по ключевым особенностям</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <h3 class="filter-title">Инфраструктура:</h3>
+            <ul class="checkbox-list">
+              <li>
+                <input type="checkbox" name="check-a" id="pool">
+                <label for="pool">
+                  <span class="checkbox-name">Бассейн</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="check-b" id="parking">
+                <label for="parking">
+                  <span class="checkbox-name">Парковка</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="check-c" id="wi-fi">
+                <label for="wi-fi">
+                  <span class="checkbox-name">Парковка</span>
+                </label>
+              </li>
+            </ul>
+            <h3 class="filter-title">Тип жилья:</h3>
+            <ul class="checkbox-list">
+              <li>
+                <input type="checkbox" name="check-d" id="hotel">
+                <label for="hotel">
+                  <span class="checkbox-name">Гостиница</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="check-e" id="motel">
+                <label for="motel">
+                  <span class="checkbox-name">Мотель</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="check-f" id="apartments">
+                <label for="apartments">
+                  <span class="checkbox-name">Апартаменты</span>
+                </label>
+              </li>
+            </ul>
+            <div class="filter-value">
+              <h3 class="visually-hidden">Фильтр стоимости услуг</h3>
+              <p class="filter-title">Стоимость в сутки (Р):</p>
+            </div>
+            <button class="button-show" type="submit">Показать</button>
+          </form>
+        </section>
       </div>
-
+      <div class="sort">
+        <p>
+          <span class="title-small">Найдено: 3</span>
+          <span class="sort-title">Сортировка:</span>
+        </p>
+        <div class="sort-links">
+          <button aria-label="Сортировка по цене" class="sort-link" type="button">
+            По цене
+          </button>
+          <button aria-label="Сортировка по типу" class="sort-link" type="button">По типу
+          </button>
+          <button aria-label="Сортировка по рейтингу" class="sort-link" type="button">По рейтингу
+          </button>
+        </div>
+        <div class="sort-buttons">
+          <button class="s-button" type="button" aria-label="Показать - сначало дешевые варианты">
+            <span class="triangle"></span>
+          </button>
+          <button class="s-button" type="button" aria-label="Показать - сначало дорогие варианты">
+            <span class="triangle triangle--bottom"></span>
+          </button>
+        </div>
+      </div>
       <div class="offer">
         <div class="img-preview">
-          <a href="#">
-            <img src="http://placehold.it/135x90" width="135" height="90" alt="Гостиница «Amara Resort & Spa»">
+          <a href="#" aria-label="Подробно о гостинице Amara Resort & Spa">
+            <img src="img/catalog/amara-resort.jpg" width="135" height="90" alt="Гостиница «Amara Resort & Spa»">
           </a>
         </div>
         <div class="offer-details">
@@ -134,11 +129,11 @@
           </p>
           <div class="more-info">
             <p>Гостиница</p>
-            <a href="#" class="button-more">Подробнее</a>
+            <a href="#" class="button-more" aria-label="Узнать подробности">Подробнее</a>
           </div>
           <div class="reserv">
             <p>от 4000 р.</p>
-            <a href="#" class="button-reserv">Забронировать</a>
+            <a href="#" class="button-reserv" aria-label="Забронировать гостиницу">Забронировать</a>
           </div>
         </div>
         <div class="rating">
@@ -157,6 +152,8 @@
             </li>
           </ul>
           <div class="rating-text">
+            <p>
+              <span class="visually-hidden">Рейтинг 8,5</p>
             <span class="lead">Рейтинг:</span>
             <span class="lead"> 8,5</span>
           </div>
@@ -164,8 +161,8 @@
       </div>
       <div class="offer">
         <div class="img-preview">
-          <a href="#">
-            <img src="http://placehold.it/135x90" width="135" height="90" alt="Мотель «Desert Quail Inn»">
+          <a href="#" aria-label="Мотель Desert Quail Inn">
+            <img src="img/catalog/desert-quail-inn.jpg" width="135" height="90" alt="Мотель «Desert Quail Inn»">
           </a>
         </div>
         <div class="offer-details">
@@ -174,11 +171,11 @@
           </p>
           <div class="more-info">
             <p>Мотель</p>
-            <a href="#" class="button-more">Подробнее</a>
+            <a href="#" class="button-more" aria-label="Узнать подробности">Подробнее</a>
           </div>
           <div class="reserv">
             <p>от 3000 р.</p>
-            <a href="#" class="button-reserv">Забронировать</a>
+            <a href="#" class="button-reserv" aria-label="Забронировать мотель">Забронировать</a>
           </div>
         </div>
         <div class="rating">
@@ -195,15 +192,16 @@
           </ul>
           <div class="rating-text">
             <p>
-              <span class="lead">Рейтинг: 8,9</span>
-            </p>
+              <span class="visually-hidden">Рейтинг 8,9</p>
+            <span class="lead">Рейтинг:</span>
+            <span class="lead"> 8,9</span>
           </div>
         </div>
       </div>
       <div class="offer">
         <div class="img-preview">
-          <a href="#">
-            <img src="http://placehold.it/135x90" width="135" height="90" alt="Апартаменты «Villas at Poco Diablo»">
+          <a href="#" aria-label="Апартаменты Villas at Poco Diablo">
+            <img src="img/catalog/villas-at-poco-diablo.jpg" width="135" height="90" alt="Апартаменты «Villas at Poco Diablo»">
           </a>
         </div>
         <div class="offer-details">
@@ -212,11 +210,11 @@
           </p>
           <div class="more-info">
             <p>Апартаменты</p>
-            <a href="#" class="button-more">Подробнее</a>
+            <a href="#" class="button-more" aria-label="Узнать подробности">Подробнее</a>
           </div>
           <div class="reserv">
             <p>от 2000 р.</p>
-            <a href="#" class="button-reserv">Забронировать</a>
+            <a href="#" class="button-reserv" aria-label="Забронировать апартаменты">Забронировать</a>
           </div>
         </div>
         <div class="rating">
@@ -230,8 +228,9 @@
           </ul>
           <div class="rating-text">
             <p>
-              <span class="lead">Рейтинг: 9,2</span>
-            </p>
+              <span class="visually-hidden">Рейтинг 9,2</p>
+            <span class="lead">Рейтинг:</span>
+            <span class="lead"> 9,2</span>
           </div>
         </div>
       </div>
@@ -240,7 +239,7 @@
   <div class="wrapper">
     <footer class="main-footer">
       <p>
-        <a href="https://www.instagram.com/visitsedona/">
+        <a href="https://www.instagram.com/visitsedona/" aria-label="Группа в Инстаграм">
           <span class="tw-tag">#visitsedona</span>
         </a>
       </p>
@@ -258,7 +257,7 @@
         </ul>
       </div>
       <p class="footer-copyright">website by:
-        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Интенсивный онлайн‑курс - Базовый HTML и CSS">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «html Academy»"></img>
         </a>
       </p>

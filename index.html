@@ -50,16 +50,15 @@
         <p class="note-text">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
       </section>
       <div class="hero1">
-        <div class="column-text">
-          <p class="title-small">Настоящий
+        <div class="hero-text text-left">
+          <p class="title-small text-left">Настоящий
             <br> городок!</p>
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов,
             <br> там течет своя жизнь
           </p>
         </div>
-        <div class="column-img">
-        </div>
+        <div class="hero-img1"></div>
       </div>
       <div class="feature-rec">
         <div class="column-rec">
@@ -90,11 +89,9 @@
         </div>
       </div>
       <div class="hero">
-        <div class="column-img">
-          <img src="http://placehold.it/800x256" width="800" height="256" alt="фото «мост дьявола»">
-        </div>
-        <div class="column-text">
-          <p class="title-small">Там есть мост дьявола</p>
+          <div class="hero-img2"></div>
+        <div class="hero-text text-right">
+          <p class="title-small text-right">Там есть<br> мост дьявола</p>
           <p>
             — №2 —
           </p>
@@ -102,6 +99,7 @@
             Да, по нему можно пройти! Если конечно вы осмелитесь
           </p>
         </div>
+        
       </div>
       <div class="note-b">
         <div class="feature-b">
@@ -147,27 +145,27 @@
               <label for="arrival-date">
                 <span class="lead">дата заезда:</span>
               </label>
-              <input type="text" name="arrival" id="arrival-date">
+              <input type="text" name="arrival" id="arrival-date" aria-label="Дата прибытия">
             </p>
             <p class="field-leaving">
               <label for="leaving-date">
                 <span class="lead">дата отъезда:</span>
               </label>
-              <input type="text" name="leaving" id="leaving-date">
+              <input type="text" name="leaving" id="leaving-date" aria-label="Дата отъезда">
             </p>
             <p class="field-adults">
               <label for="amount-a">
                 <span class="lead">взрослые:</span>
               </label>
-              <input type="text" name="adults" id="amount-a">
+              <input type="number" name="adults" id="amount-a" aria-label="Укажите количество взрослых">
             </p>
             <p class="field-children">
               <label for="amount-c">
                 <span class="lead">дети:</span>
               </label>
-              <input type="text" name="children" id="amount-c">
+              <input type="number" name="children" id="amount-c" aria-label="Укажите количество детей">
             </p>
-            <button class="button-find" type="submit">Найти</button>
+            <button class="button-find" type="submit" aria-label="Найти">Найти</button>
           </form>
         </section>
       </div>
@@ -175,7 +173,7 @@
     </main>
     <footer class="main-footer">
       <p>
-        <a href="https://www.instagram.com/visitsedona/">
+        <a href="https://www.instagram.com/visitsedona/" aria-label="Группа в Инстаграм">
           <span class="tw-tag">#visitsedona</span>
         </a>
       </p>
@@ -193,7 +191,7 @@
         </ul>
       </div>
       <p class="footer-copyright">website by:
-        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Интенсивный онлайн‑курс - Базовый HTML и CSS">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «html Academy»"></img>
         </a>
       </p>
