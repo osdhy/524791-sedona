@@ -1,5 +1,6 @@
-/* Typography */
-
+/* ============================
+  Typography
+============================ */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -19,7 +20,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -28,34 +29,23 @@ body {
   background-color: #f2f2f2;
 }
 
-.lead {
-  font-family: "PT Sans Bold", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
-}
-
 .title-small {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
 .title-medium {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
 }
 
-/* Colors */
-.white {
-  color: #fff;
-}
-
-
-/* Page Container */
+/* ============================
+  Header
+============================ */
 .wrapper {
   position: relative;
   width: 1200px;
@@ -64,24 +54,25 @@ body {
   box-shadow: 2px 0 20px 0 rgba(00, 01, 01, 0.1), -2px 0 20px 0 rgba(00, 01, 01, 0.1);
 }
 
-/* Header */
-.main-nav {
-  position: relative;
-}
-
 .main-header {
+  position: relative;
   width: 100%;
   height: 56px;
   background-color: #fff;
 }
 
+.main-nav img {
+  display: inline-block;
+}
+
 .header-logo {
-  margin: auto;
-  width: 138px;
-  height: 70px;
   position: absolute;
   left: 0; 
   right: 0;
+  margin: auto;
+  width: 138px;
+  height: 70px;
+  z-index: 10;
 }
 
 .site-nav {
@@ -125,7 +116,7 @@ body {
 }
 
 .nav-link {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -144,7 +135,9 @@ body {
   color: #766357;
 }
 
-/* Welcome */
+/* ============================
+  Feature Content Index
+============================ */
 .main-background {
   width: 1200px;
   height: 508px;
@@ -157,7 +150,6 @@ body {
   margin-top: 76px;
 }
 
-/* Feature Content */
 .feture-content {
   width: 100%;
   display: flex;
@@ -178,7 +170,7 @@ body {
   margin: 0;
   padding-top: 60px;
   margin-bottom: 27px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -221,7 +213,7 @@ body {
   margin: 0;
   margin-top: 47px;
   margin-bottom: 24px; 
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #fff;
@@ -346,7 +338,9 @@ body {
   margin: 0;
 }
 
-/* Forms */
+/* ============================
+  Search Form Index
+============================ */
 .form-title {
   position: relative;
   width: 1200px;
@@ -359,7 +353,7 @@ body {
   margin: 0;
   padding-top: 50px;
   margin-bottom: 23px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -380,16 +374,17 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #766357;
-  border: none;
 }
 
 .expand-button {
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   color: #fff;
   text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background-color: #766357;
 }
 
 .expand-button:hover {
@@ -421,19 +416,17 @@ body {
   position: absolute;
   right: 53px;
   bottom: 8px;
-  
   display: inline-block;
   margin: 0;
   width: 21px;
   height: 22px;
   cursor: pointer;
-  
 }
 
 .search-form label {
   display: inline-block;
   font-size: 14px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -454,7 +447,7 @@ body {
 
 .field-label {
   margin: 0;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -484,7 +477,7 @@ body {
   width: 331px;
   height: 38px;
   border: none;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -493,7 +486,7 @@ body {
 
 .field-input[type="text"] {
   padding-left: 14px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -501,7 +494,7 @@ body {
 }
 
 .search-form input::placeholder {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -518,6 +511,7 @@ body {
 }
 
 .icon-calendar {
+  border-radius: 0;
   border: none;
   background: none;
 }
@@ -580,6 +574,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     border: none;
+    border-radius: 0;
     background-color: #81b3d2;
     cursor: pointer;
 }
@@ -593,65 +588,136 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Filter Checkbox */
+/* ============================
+  Filter Catalog
+============================ */
 .filter-container {
+  position: relative;
   margin: 0;
   width: 1200px;
   height: 217px;
+  display: flex;
+  justify-content: space-between;
   background-image: url("../img/catalog/filter-background.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0 16%;
 }
 
 .filter-container fieldset {
-  border: none;
-}
-
-.filter-container legend {
-  
+  width: 200px;
+  padding: 0;
+  padding-left: 40px;
+  margin-right: 13px;
+  border: 0;
 }
 
 .filter-form {
+  margin-top: 27px;
+  padding-left: 30px;
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 
 .filter-title {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
   color: #fff;
 }
 
 .checkbox-list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.checkbox-list label {
-  font-family: "PT Sans", Arial, sans-serif;
+.filter-row {
+  margin-bottom: 19px;
+}
+
+.checkbox-list input[type=checkbox] + label {
+  display: block;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #fff;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 23px;
 }
 
-/* Filter Range */
+.checkbox-list input[type=checkbox] + label:before {
+  content: "";
+  width: 27px;
+  height: 23px;
+  padding-right: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/elements/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition-property: width, height;
+  transition: .1s, .1s;
+}
+
+.checkbox-list input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+.checkbox-list input[type=checkbox]:checked + label:before {
+  content: "";
+  width: 27px;
+  height: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/elements/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.checkbox-list input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  width: 27px;
+  height: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/elements/checkbox-off-dis.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.checkbox-list input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  width: 27px;
+  height: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/elements/checkbox-on-dis.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .filter-range {
-  width: 330px;
+  position: absolute;
+  right: 72px;
+  width: 318px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  margin-bottom: 10px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
 }
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -671,21 +737,27 @@ body {
 
 .price-controls label {
   display: inline-block;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 31px;
   vertical-align: top;
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
+} 
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 57px;
 } 
 
 .price-controls input {
   width: 50px;
   margin: 0;
+  padding-left: 5px;
   color: inherit;
   font: inherit;
   background: none;
@@ -734,11 +806,13 @@ body {
 
 .button-show {
   display: block;
+  width: 133px;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
   background: transparent;
   border: 2px solid #ffffff;
@@ -751,7 +825,9 @@ body {
     background: #ffffff;
   }
 
-/* Sorting */
+/* ============================
+  Sorting Catalog
+============================ */  
 .sort {
   width: 100%;
   height: 86px;
@@ -762,7 +838,7 @@ body {
 }
 
 .sort-title {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
   color: #000000;
@@ -801,31 +877,18 @@ body {
   background-color: transparent;
 }
 
-  /* Rating */
+/* ============================
+  Rating Catalog
+============================ */
 .stars {
   margin:0;
   padding: 0;
   list-style: none
 }
 
-/* Accessibility */
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* Map Container */
+/* ============================
+  Map
+============================ */
 .map-container {
   position: relative;
   margin: 0;
@@ -847,6 +910,9 @@ input[type="radio"].visually-hidden {
   background-position-y: 99%;
 }
 
+/* ============================
+  Footer
+============================ */
 .footer {
   position: absolute;
   bottom: 0;
@@ -935,3 +1001,21 @@ input[type="radio"].visually-hidden {
   fill: #bdbbbc;
 }
 
+/* ============================
+  Accessibility
+============================ */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
