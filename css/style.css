@@ -146,13 +146,11 @@ body {
 .main-background {
   width: 1200px;
   height: 508px;
-  background-image: url("../img/background-photo.jpg");
-  background-position: center -55px;
-  background-repeat: no-repeat;
+  background: url("../img/background-photo.jpg") #97c0da no-repeat center -56px;
 }
 
 .inner-img img {
-  margin-top: 76px;
+  padding-top: 76px;
 }
 
 .feture-content {
@@ -172,6 +170,7 @@ body {
 }
 
 .reason-title {
+  max-width: 600px;
   margin: 0;
   padding-top: 60px;
   margin-bottom: 27px;
@@ -194,7 +193,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 256px;
+  min-height: 256px;
 }
 
 .notes span {
@@ -211,12 +210,15 @@ body {
 }
 
 .note-text {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 320px;
   margin-top: 21px;
 }
 
 .note-title {
-  margin: 0;
+  max-width: 160px;
+  height: auto;
+  margin: 0 auto;
   margin-top: 47px;
   margin-bottom: 24px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -230,20 +232,14 @@ body {
   margin: 0;
   width: 800px;
   height: 256px;
-  background: #fff;
-  background-image: url("../img/city.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 54%;
+  background: url("../img/city.jpg") #848778 no-repeat 50% 54%;
 }
 
 .note-img-left {
   margin: 0;
   width: 800px;
   height: 256px;
-  background: #fff;
-  background-image: url("../img/canyon.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 53%;
+  background: url("../img/canyon.jpg") #d4775b no-repeat 50% 53%;
 }
 
 /* Feature Columns */
@@ -273,7 +269,8 @@ body {
 }
 
 .text-rec {
-  margin-top: 0;
+  max-width: 290px;
+  margin: 0 auto;
 }
 
 .icon-home {
@@ -330,7 +327,8 @@ body {
 }
 
 .fact h4 {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 150px;
   padding-top: 47px;
   margin-bottom: 24px;
 }
@@ -341,7 +339,8 @@ body {
 }
 
 .fact p {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 260px;
 }
 
 /* ============================
@@ -357,7 +356,8 @@ body {
 }
 
 .form-title h3 {
-  margin: 0;
+  max-width: 568px; 
+  margin: 0 auto;
   padding-top: 50px;
   margin-bottom: 23px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -423,6 +423,7 @@ body {
 
 .search-form label {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   color: #000000;
@@ -469,21 +470,30 @@ body {
 }
 
 .field-input {
-  padding-left: 20px;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
   width: 331px;
   height: 38px;
-  border: 0;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
+  border: 0;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .field-input[type="text"] {
   padding-left: 14px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-form input::placeholder {
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -514,6 +524,7 @@ body {
   border-radius: 0;
   border: 0;
   background: none;
+  cursor: pointer; 
 }
 
 .icon-calendar:hover path {
@@ -525,7 +536,7 @@ body {
 }
 
 .icon-calendar:focus {
-  outline: none;
+  outline: 2px solid #e5e5e5;
 }
 
 .field-input-half {
@@ -537,6 +548,11 @@ body {
   border-radius: 0;
   background-color: #f2f2f2;
   text-align: center;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .field-input-half:focus {
@@ -601,9 +617,7 @@ body {
   height: 217px;
   display: flex;
   justify-content: space-between;
-  background-image: url("../img/catalog/filter-background.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 16%;
+  background: url("../img/catalog/filter-background.jpg") #608bb4 no-repeat 0 16%;
 }
 
 .filter-container fieldset {
@@ -648,8 +662,8 @@ body {
   margin-bottom: 23px;
 }
 
-.checkbox-list:focus label {
-  outline: 2px solid #e5e5e5;
+.checkbox-list input:focus + label:before {
+  outline: 2px solid #669ec0;
 }
 
 .checkbox-list input[type="checkbox"] + label:before {
@@ -841,20 +855,13 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.sort span,
-button {
-  display: inline-block;
-  margin: 0;
-  vertical-align: bottom;
-}
-
 .sort h3 {
   padding-left: 72px;
 }
 
 .links-container {
   display: flex;
-  width: 900px;
+  width: 902px;
 }
 
 .s-title {
@@ -911,15 +918,21 @@ button {
 }
 
 .s-buttons {
-  width: 45px;
+  font-size: 0;
+}
+
+.s-buttons span {
+  display: inline-block;
+  vertical-align: middle;  
 }
 
 .s-button {
+  width: 16px;
+  height: 16px;
   padding: 0;
-  padding-left: 5px;
-  padding-bottom: 4px;
-  border-radius: 0;
+  margin-right: 6px;
   border: 0;
+  border-radius: 0;
   background-color: transparent;
   cursor: pointer;
   user-select: none;
@@ -985,9 +998,10 @@ button {
 }
 
 .offer-title {
+  display: inline-block;
+  vertical-align: middle;
   margin: 0;
   margin-bottom: 2px;
-  width: 100%;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -1007,10 +1021,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
-  margin-top: 2px;
 }
 
-.details-container a {
+.offer-buttons a {
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
@@ -1025,11 +1038,16 @@ button {
   margin-bottom: 14px;
 }
 
-.more-info span:first-child {
-  margin-right: 35px;
+.offer-info span {
+  width: 113px;
 }
 
-.more-info {
+.offer-info {
+  width: 100%;
+  margin: 0;
+}
+
+.offer-buttons {
   width: 100%;
   margin: 0;
 }
@@ -1048,11 +1066,6 @@ button {
 .btn-more:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-}
-
-.reserv {
-  width: 100%;
-  margin: 0;
 }
 
 .btn-reserv {
@@ -1128,10 +1141,7 @@ button {
 .map-image {
   width: 100%;
   height: 593px;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 99%;
+  background: url("../img/map.jpg") #f2f1ef no-repeat 50% 99%;
 }
 
 /* ============================
