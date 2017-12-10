@@ -93,8 +93,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
+              <div class="range-toggle range-toggle-min" tabindex="0"></div>
+              <div class="range-toggle range-toggle-max" tabindex="0"></div>
             </div>
             <button class="button-show" type="submit">Показать</button>
           </div>
@@ -169,10 +169,12 @@
       <div class="offer-container">
         <div class="offer">
           <div class="img-preview">
-            <img src="img/catalog/desert-quail-inn.jpg" width="135" height="90" alt="Мотель «Desert Quail Inn»">
+            <a href="#" aria-label="Подробно о мотеле Amara Resort & Spa">
+              <img src="img/catalog/desert-quail-inn.jpg" width="135" height="90" alt="Мотель «Desert Quail Inn»">
+            </a>
           </div>
-          <div class="offer-details">    
-          <a class="offer-title" href="#">Desert Quail Inn</a>
+          <div class="offer-details">
+            <a class="offer-title" href="#">Desert Quail Inn</a>
             <div class="details-container">
               <p class="offer-info">
                 <span>Мотель</span>
@@ -206,7 +208,7 @@
             </a>
           </div>
           <div class="offer-details">
-              <a class="offer-title" href="#">Villas at Poco Diablo</a>
+            <a class="offer-title" href="#">Villas at Poco Diablo</a>
             <div class="details-container">
               <p class="offer-info">
                 <span>Апартаменты</span>
